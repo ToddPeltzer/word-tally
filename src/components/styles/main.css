@@ -1,0 +1,11 @@
+.list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.word-container {
+    padding: 1rem;
+    list-style-type: none;
+}
