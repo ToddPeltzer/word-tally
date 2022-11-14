@@ -6,7 +6,7 @@ function main() {
 
     return (
         <div>
-            <WordCount />
+            {/* <WordCount /> */}
         </div>
     );
 }

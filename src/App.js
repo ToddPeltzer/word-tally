@@ -1,10 +1,10 @@
 import './App.css';
-import Main from './components/main'
+import WordCount from './components/wordCounts';
 
 function App() {
   return (
     <div>
-      <Main />
+      <WordCount />
     </div>
   );
 }
