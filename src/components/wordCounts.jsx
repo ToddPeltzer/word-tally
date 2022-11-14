@@ -3,7 +3,7 @@ import './styles/wordCount.css';
 
 function main() {
 
-    let paragraphText = "They had no proof. He knew that they knew he had done it but they didn't have any proof. It was a huge distinction and it was the difference between him keeping his freedom or being locked away for decades. They continued to question him, probing him for information that they could use against him or find the proof they needed to put him away. He smiled and continued to block their every inquiry by feigning his innocence for a crime they all knew he committed. What were the chances? It would have to be a lot more than 100 to 1. It was likely even more than 1,000 to 1. The more he thought about it, the odds of it happening had to be more than 10,000 to 1 and even 100,000 to 1. People often threw around the chances of something happening as being 1,000,000 to 1 as an exaggeration of an unlikely event, but he could see that they may actually be accurate in this situation. Whatever the odds of it happening, he knew they were big. What he didn't know was whether this happening was lucky or unlucky.";
+    let paragraphText = "I inadvertently went to See's Candy last week (I was in the mall looking for phone repair), and as it turns out, See's Candy now charges a dollar -- a full dollar -- for even the simplest of their wee confection offerings. I bought two chocolate lollipops and two chocolate-caramel-almond things. The total cost was four-something. I mean, the candies were tasty and all, but let's be real: A Snickers bar is fifty cents. After this dollar-per-candy revelation, I may not find myself wandering dreamily back into a See's Candy any time soon.";
     //final outcome will be stored here
     let answerArray = [];
     //minimum length of words being used
@@ -48,6 +48,9 @@ function main() {
 
     wordCount(paragraphText)
 
+    // if (!paragraphText) {
+    //     return null
+    // } else 
     return (
         <div>
             <p>{paragraphText}</p>
@@ -66,8 +69,8 @@ function main() {
                         }
                         fontColor(object.count);
                         const fontStyle = {
-                        fontSize: `${newFontSize}rem`,
-                        color: color
+                            fontSize: `${newFontSize}rem`,
+                            color: color
                         }
                     return (
                         <li className="word-container" style={fontStyle}>
