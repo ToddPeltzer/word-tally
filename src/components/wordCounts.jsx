@@ -8,7 +8,7 @@ function main() {
     //final outcome will be stored here
     let answerArray = [];
     //minimum length of words being used
-    const letterCount = 2;
+    const letterCount = 3;
     //default font size in 'rem'
     const minimumFontSize = 1;
     const manyColor = 'red';
