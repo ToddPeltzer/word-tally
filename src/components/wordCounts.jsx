@@ -1,5 +1,8 @@
 import React from 'react';
 import './styles/wordCount.css';
+import { Route } from 'react-router-dom';
+import Test from "./test"
+
 
 function main() {
 
@@ -37,7 +40,6 @@ function main() {
             //if word is existing then add a value
             wordLookup[approvedWords[i]]++
         }
-        
         // destructure and add to answer array
         for (const [key, value] of Object.entries(wordLookup)) {
             answerArray.push({word: key, count: value});
@@ -49,9 +51,6 @@ function main() {
 
     wordCount(paragraphText)
 
-    // if (!paragraphText) {
-    //     return null
-    // } else 
     return (
         <div>
             <p>{paragraphText}</p>

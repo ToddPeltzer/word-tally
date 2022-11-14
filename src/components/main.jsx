@@ -1,12 +1,11 @@
 import React from 'react';
-import WordCount from './wordCounts';
 import './styles/main.css';
 
 function main() {
-
     return (
         <div>
-            {/* <WordCount /> */}
+            <a href="/word-tally/count">Word Count</a>
+            <a href="/word-tally/test">Test</a>
         </div>
     );
 }
