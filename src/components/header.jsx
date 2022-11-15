@@ -1,12 +1,10 @@
 import React from 'react';
-import './styles/main.css';
 import { Link } from 'react-router-dom';
 
-
-function main() {
+function header(props) {
     return (
         <div>
-            MainPage
+            Header
             <Link to="/">Home</Link>
             <Link to ="/count">Count</Link>
             <Link to="/test">Test</Link>
@@ -14,4 +12,4 @@ function main() {
     );
 }
 
-export default main;
+export default header;
