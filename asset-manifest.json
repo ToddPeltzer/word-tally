@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/word-tally/static/css/main.db710952.css",
-    "main.js": "/word-tally/static/js/main.f85ade69.js",
+    "main.js": "/word-tally/static/js/main.6a7e0356.js",
     "static/js/787.b0db74d0.chunk.js": "/word-tally/static/js/787.b0db74d0.chunk.js",
     "index.html": "/word-tally/index.html",
     "main.db710952.css.map": "/word-tally/static/css/main.db710952.css.map",
-    "main.f85ade69.js.map": "/word-tally/static/js/main.f85ade69.js.map",
+    "main.6a7e0356.js.map": "/word-tally/static/js/main.6a7e0356.js.map",
     "787.b0db74d0.chunk.js.map": "/word-tally/static/js/787.b0db74d0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.db710952.css",
-    "static/js/main.f85ade69.js"
+    "static/js/main.6a7e0356.js"
   ]
 }
