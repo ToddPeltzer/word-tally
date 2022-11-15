@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Main from "./components/main";
 import WordCount from "./components/wordCounts";
 import Test from "./components/test";
@@ -7,7 +7,7 @@ import Test from "./components/test";
 function App() {
   return (
 
-    <BrowserRouter>
+    <HashRouter>
     <Main />
       <Routes>  
         <Route
@@ -19,7 +19,7 @@ function App() {
           element = {<Test />}
         />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
 
   );
 }
