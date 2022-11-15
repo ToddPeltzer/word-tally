@@ -9,8 +9,8 @@ function App() {
   return (
 
     <BrowserRouter>
-      <Header />
-      <Routes>  
+      <WordCount />
+      {/* <Routes>  
         <Route
           path = "/"
           element = {<Main />}
@@ -23,7 +23,7 @@ function App() {
           path = "/test"
           element = {<Test />}
         />
-      </Routes>
+      </Routes> */}
     </BrowserRouter>
 
   );
