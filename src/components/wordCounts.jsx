@@ -6,8 +6,12 @@ import Test from "./test"
 
 function main() {
 
-    let paragraphText = `There was something beautiful in his hate. It wasn't the hate itself as it was a disgusting display of racism and intolerance. It was what propelled the hate and the fact that although he had this hate, he didn't understand where it came from. It was at that moment that she realized that there was hope in changing him.
-    Life isn't always beautiful. That was a lesson that Dan was learning. He also realized that life wasn't easy. This had come as a shock since he had lived a charmed life. He hated that this was the truth and he struggled to be happy knowing that his assumptions weren't correct. He wouldn't realize until much later in life that the difficult obstacles he was facing that were taking away the beauty in his life at this moment would ultimately make his life much more beautiful. All he knew was that at this moment was that life isn't always beautiful.`;
+    let paragraphText1 = `At Scorpion, we have the technology to connect all of your marketing and show you the results you expect from the money you spend. From our research and customer management software to our artificial intelligence-led search engine products, we have the latest technology to grow your business.`;
+    let paragraphText2 = `2Once the technology is in place, our team of specialists will partner with you along the way to handle all of the marketing for your business, so you can focus on providing a great experience to your customers.`;
+
+    let textInput = paragraphText1 + paragraphText2;
+    console.log(textInput)
+
     //final outcome will be stored here
     let answerArray = [];
     //minimum length of words being used
@@ -49,11 +53,12 @@ function main() {
     
     }
 
-    wordCount(paragraphText)
+    wordCount(textInput)
 
     return (
         <div>
-            <p>{paragraphText}</p>
+            <p>{paragraphText1}</p>
+            <p>{paragraphText2}</p>
             <ul className='list-container'>
                 {answerArray.map(object => {
                     let newFontSize = object.count+minimumFontSize;
