@@ -9,7 +9,7 @@ function main() {
     let paragraphText1 = `At Scorpion, we have the technology to connect all of your marketing and show you the results you expect from the money you spend. From our research and customer management software to our artificial intelligence-led search engine products, we have the latest technology to grow your business.`;
     let paragraphText2 = `2Once the technology is in place, our team of specialists will partner with you along the way to handle all of the marketing for your business, so you can focus on providing a great experience to your customers.`;
 
-    let textInput = paragraphText1 + ' ' + paragraphText2;
+    let textInput = `${paragraphText1} ${paragraphText2}`;
     console.log(textInput)
 
     //final outcome will be stored here
