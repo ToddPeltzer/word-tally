@@ -10,7 +10,6 @@ function main() {
     let paragraphText2 = `2Once the technology is in place, our team of specialists will partner with you along the way to handle all of the marketing for your business, so you can focus on providing a great experience to your customers.`;
 
     let textInput = `${paragraphText1} ${paragraphText2}`;
-    console.log(textInput)
 
     //final outcome will be stored here
     let answerArray = [];
@@ -54,6 +53,29 @@ function main() {
     }
 
     wordCount(textInput)
+
+    // // sorts answers to be largest count first
+    // answerArray.sort((a, b) => {
+    //     if (a.count < b.count) {
+    //         return 1;
+    //     } else {
+    //         return -1;
+    //     }
+    // })
+
+    // sort the array from largest count value to smallest
+    answerArray.sort(function (a, b) {
+        return a.count - b.count;
+    });
+
+    let arr1 = answerArray.slice(0, answerArray.length / 2);
+    let arr2 = answerArray.slice(answerArray.length / 2, answerArray.length);
+
+    arr2.sort(function (a, b) {
+        return b.count - a.count;
+    });
+
+    answerArray = arr1.concat(arr2);
 
     return (
         <div>
