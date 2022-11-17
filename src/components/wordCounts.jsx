@@ -1,7 +1,5 @@
 import React from 'react';
 import './styles/wordCount.css';
-import { Route } from 'react-router-dom';
-import Test from "./test"
 
 
 function main() {
@@ -54,15 +52,6 @@ function main() {
 
     wordCount(textInput)
 
-    // // sorts answers to be largest count first
-    // answerArray.sort((a, b) => {
-    //     if (a.count < b.count) {
-    //         return 1;
-    //     } else {
-    //         return -1;
-    //     }
-    // })
-
     // sort the array from largest count value to smallest
     answerArray.sort(function (a, b) {
         return a.count - b.count;
@@ -77,30 +66,37 @@ function main() {
 
     answerArray = arr1.concat(arr2);
 
+
+
     return (
         <div>
-            <p>{paragraphText1}</p>
-            <p>{paragraphText2}</p>
+            <div className='paragraphContainer'>
+                <p>{paragraphText1}</p>
+                <p>{paragraphText2}</p>
+            </div>
             <ul className='list-container'>
                 {answerArray.map(object => {
+
                     let newFontSize = object.count+minimumFontSize;
-                    let color = "";
-                        function fontColor(count) {
-                        if (count < 5) {
-                            color = littleColor;
-                        } else if (count < 10) {
-                            color = fewColor;
-                        } else {
-                            color = manyColor;
-                        }
-                        }
-                        fontColor(object.count);
-                        const fontStyle = {
-                            fontSize: `${newFontSize}rem`,
-                            color: color
-                        }
+                    let color;
+                    let index = answerArray.indexOf(object);
+                    index = `word-container index${index+1}`
+
+                    if (object.count < 5) {
+                        color = littleColor;
+                    } else if (object.count < 10) {
+                        color = fewColor;
+                    } else {
+                        color = manyColor;
+                    }
+
+                    const fontStyle = {
+                        fontSize: `${newFontSize}rem`,
+                        color: color
+                    }
+
                     return (
-                        <li className="word-container" style={fontStyle}>
+                        <li className={index} style={fontStyle}>
                             {object.word}
                         </li>
                     )
